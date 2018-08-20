@@ -11,10 +11,18 @@ GD class mainly provide walk-like methods on google drive for local to drive syn
 Note: tried gdcp on github, but would duplicate directories, no check for existence.
 
 Several methods enable the user to get id, create folder or upload file giving a local path in unix format, which is very convenient:
-    ls, ls_by_path with wildcard
-    get_id, get_id_by_path
-    create_folder, create_folder_by_path
-    upload_by_path, upload
+
+    - ls, ls_by_path with wildcard
+
+    - get_id, get_id_by_path
+
+    - create_folder, create_folder_by_path
+
+    - upload, upload_by_path
+
+    - walk directories and sync local to drive methods
+
+Underlying methods: walk_diff, get_tree, list_files,...
 
 Get it running:
 
