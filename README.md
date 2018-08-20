@@ -24,6 +24,8 @@ Several methods enable the user to get id, create folder or upload file giving a
 
 Underlying methods: walk_diff, get_tree, list_files,...
 
+Only files owned by 'me' and not shared are considered.
+
 Get it running:
 
     1. download this file and credential_json_filename to dir, add dir to python path
