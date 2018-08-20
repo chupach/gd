@@ -11,13 +11,19 @@ Several methods enable the user to get id, create folder or upload file giving a
     get_id, get_id_by_path
     create_folder, create_folder_by_path
     upload_by_path, upload
+    walk and sync
+
+Underlying methods: walk_diff, sync_from_list, list_files, get_tree (build filesy system hierarchy dictionnary tree)
+
+Only files which belongs to 'me' (not shared) are considered
 
 Get it running:
     1. download this file and credential_json_filename to dir, add dir to python path
     2. then: go in parent dir of the location dir_to_sync you want to sync and in python:
     3. in cli python3, e.g.
         - from goog_drive_sync import *; gd=GD(credential_json_filename)
-        - gd.sync_from_ls_drive(dir_to_sync)
+        - gd.sync(dir_to_sync) # option from_treedict
+
 """
 
 
